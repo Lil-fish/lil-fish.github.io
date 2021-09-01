@@ -147,7 +147,7 @@ body {
   positon: relative | absolute | fixed | sticky;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: 0;,
   right: 0;
 }
 
