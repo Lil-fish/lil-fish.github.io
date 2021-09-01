@@ -5,7 +5,7 @@ body{
     margin-right: 5ch;
     font-family: Impact, Charcoal, sans-serif;
 }
-/*顶部导航栏*/
+/*顶部导航栏.*/
 .page-header{
     position: -webkit-sticky;
     position: sticky;
