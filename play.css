@@ -1,0 +1,34 @@
+body{
+    background-color: #f54b4b33;
+}
+.parent {
+    display: flex;
+    width: 1000px;
+    height: 1000px;
+}
+.child {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}
+.custom-shape-divider-top-1630330931 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1630330931 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 265px;
+}
+
+.custom-shape-divider-top-1630330931 .shape-fill {
+    fill: #F54B4B;
+}
+/*font:
+NeueHaas,"Helvetica Neue",Helvetica,Arial,sans-serif*/

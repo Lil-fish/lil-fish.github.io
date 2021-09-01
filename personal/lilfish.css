@@ -1,0 +1,119 @@
+body{
+    background-color: #f1f0ef;
+    color: rgb(108, 139, 108);
+    margin-left: 5ch;
+    margin-right: 5ch;
+    font-family: Impact, Charcoal, sans-serif;
+}
+/*顶部导航栏*/
+.page-header{
+    position: -webkit-sticky;
+    position: sticky;
+    /*使其粘在顶部 但是会被下面的覆盖 怎么解决？*/
+    top: 0;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.site-title{
+    text-decoration: none;
+    color: rgb(108, 139, 108);
+    font-size: 36px;
+    font-weight: 300;
+    float: left;
+}
+
+.page-header nav a{
+    text-decoration: none;
+    color: rgb(108, 139, 108);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/*中间图片部分*/
+.page-content{
+    margin-top: 15px; 
+    position:relative;
+    align-content: space-between;
+}
+.section1{
+    display: flex;
+    position:relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+   
+
+.a1 {background:url(assets/pic/图片1.png);width:29.5%;}
+.a1:hover{background:url(assets/pic/图片2.png);width: 29.5%;background-size: 100% ;background-position: center;}
+.a1 {
+    height:20rem;
+    margin-right: 1%;
+    border-radius: 0px;
+   }
+.b1 {background:url(assets/pic/图片1.png);width:69.5%;}
+.b1:hover{background:url(assets/pic/donut4.png);width: 69.5%;background-size: 100% ;background-position: center;}
+.b1 {
+    height:20rem
+    border-radius: 0px;
+   }
+
+
+.texta{
+    position:absolute;
+    top:8px;
+    left:16px;
+    font size:18px;
+}
+.section2{
+    display: flex;
+    position:relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.a2 {background:url(assets/pic/图片1.png);width:49.5%;object-fit:cover;}
+.a2:hover{background:url(assets/pic/微信图片_20210627222859.jpg);width: 49.5%;background-size: 100% ;background-position: center;}
+.a2 {aspect-ratio: 25/9;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 0px;
+    margin-right: 1%;
+   }
+.b2 {background:url(assets/pic/图片1.png);width:49.5%;object-fit:cover;}
+.b2:hover{background:url(assets/pic/1.14.jpg);width: 49.5%;background-size: 100% ;background-position: center;}
+.b2 {aspect-ratio: 25/9;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 0px;
+   }
+
+   .section3{
+    display: flex;
+    position:relative;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+.a3 {background:url(assets/pic/图片1.png);width: 100%;;object-fit:cover;}
+.a3:hover{background:url(assets/pic/微信图片_20210627222628.jpg);width: 100%;background-size: 100% ;background-position: center;}
+.a3 {aspect-ratio: 25/9;
+    object-fit: cover;
+    height: 20rem;
+    border-radius: 0px;
+   }
+.gif{
+    position: fixed;
+    left: 5ch;
+    bottom: 0px;
+    width: 300px;
+    height: 600px;
+    z-index: 99999;
+    opacity: 0.4;
+}
