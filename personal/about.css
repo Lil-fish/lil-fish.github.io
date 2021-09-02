@@ -1,69 +1,123 @@
 body {
-        background-color: black;
-        color: white;
-        font-family: Impact, Charcoal, sans-serif;
-        margin: 0;
-    }
-    /*顶部导航栏.*/
-    
-    .page-header {
-        position: -webkit-sticky;
-        position: sticky;
-        z-index: 1;
-        /*使其粘在顶部 但是会被下面的覆盖 怎么解决？*/
-        top: 0;
-        align-items: center;
-        margin-left: 3ch;
-        margin-right: 3ch;
-    }
-    
-    .wrapper {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 30px;
-    }
-    
-    .site-title {
-        text-decoration: none;
-        color: white;
-        font-size: 36px;
-        font-weight: 300;
-        float: left;
-    }
-    
-    .page-header nav a:first-child {
-        text-decoration: none;
-        color: rgb(255, 255, 255);
-        font-size: 24px;
-        margin-left: 20px;
-    }
-    
-    .page-header nav a {
-        text-decoration: none;
-        color: rgb(80, 80, 80);
-        font-size: 24px;
-        margin-left: 20px;
-    }
+    background-color: black;
+    color: white;
+    font-family: Impact, Charcoal, sans-serif;
+    margin: 0;
 }
+
+
+/*顶部导航栏.*/
+
+.page-header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    /*使其粘在顶部 但是会被下面的覆盖 怎么解决？*/
+    top: 0;
+    align-items: center;
+    margin-left: 3ch;
+    margin-right: 3ch;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.site-title {
+    text-decoration: none;
+    color: white;
+    font-size: 36px;
+    font-weight: 300;
+    float: left;
+}
+
+.page-header nav a:first-child {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.page-header nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
 
 /*中间图片部分*/
 
+.icon {
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-google {
+    color: white;
+}
+
+.fa-youtube {
+    color: white;
+}
+
+.fa-instagram {
+    color: white;
+}
+
+.fa-pinterest {
+    color: white;
+}
+
+
 /*top文字部分*/
+
 .top {
-    margin-top: 20%;
-    margin-bottom: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.main {
     text-align: center;
     font-size: 36px;
     font-weight: 300;
 }
+
+.sub {
+    margin-left: 3ch;
+    margin-top: 10%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 50;
+}
+
 .page-content {
     margin-top: 30px;
     position: relative;
     margin-left: 1%;
     margin-right: 1%;
 }
+
 .section1 {
     display: flex;
     position: relative;
@@ -71,6 +125,7 @@ body {
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
 .a1 {
     background: url(assets/pic/图片2.png);
     -webkit-filter: brightness(50%)grayscale(100%);
@@ -81,6 +136,7 @@ body {
     background-repeat: no-repeat;
     height: 20rem;
 }
+
 .a1:hover {
     background: url(assets/pic/图片2.png);
     -webkit-filter: grayscale(0%);
@@ -91,6 +147,7 @@ body {
     padding-top: 5/2%;
     height: 20rem;
 }
+
 .b1 {
     background: url(assets/pic/图片1.png);
     -webkit-filter: grayscale(100%) brightness(50%);
@@ -102,6 +159,7 @@ body {
     height: 20rem;
     in-width: 20rem;
 }
+
 .b1:hover {
     background: url(assets/pic/图片1.png);
     -webkit-filter: grayscale(0%);
@@ -113,6 +171,7 @@ body {
     height: 20rem;
     in-width: 20rem;
 }
+
 .texta {
     -webkit-filter: grayscale(0%);
     position: absolute;
@@ -121,6 +180,7 @@ body {
     font size: 150px;
     z-index: 2;
 }
+
 .section2 {
     display: flex;
     position: relative;
@@ -128,6 +188,7 @@ body {
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
 .a2 {
     background: url(assets/pic/凳子1.png);
     -webkit-filter: grayscale(100%) brightness(50%);
@@ -138,6 +199,7 @@ body {
     min-height: 20rem;
     padding-top: 5/2%;
 }
+
 .a2:hover {
     background: url(assets/pic/凳子1.png);
     -webkit-filter: grayscale(0%);
@@ -148,6 +210,7 @@ body {
     min-height: 20rem;
     padding-top: 5/2%;
 }
+
 .b2 {
     background: url(assets/pic/final2.22.jpg);
     -webkit-filter: grayscale(100%) brightness(50%);
@@ -158,6 +221,7 @@ body {
     background-repeat: no-repeat;
     padding-top: 5/2%;
 }
+
 .b2:hover {
     background: url(assets/pic/final2.22.jpg);
     -webkit-filter: grayscale(0%);
@@ -168,6 +232,7 @@ body {
     min-height: 20rem;
     padding-top: 5/2%;
 }
+
 .c2 {
     background: url(assets/pic/凳子.jpg);
     -webkit-filter: grayscale(100%) brightness(50%);
@@ -178,6 +243,7 @@ body {
     min-height: 20rem;
     background-size: cover;
 }
+
 .c2:hover {
     background: url(assets/pic/凳子.jpg);
     -webkit-filter: grayscale(0%);
@@ -188,6 +254,7 @@ body {
     min-height: 20rem;
     padding-top: 5/2%;
 }
+
 .section3 {
     display: flex;
     position: relative;
@@ -195,6 +262,7 @@ body {
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
 .a3 {
     background: url(assets/pic/微信图片_20210627222628.jpg);
     -webkit-filter: grayscale(100%) brightness(80%);
@@ -205,6 +273,7 @@ body {
     height: 20rem;
     padding-top: 5/2%;
 }
+
 .a3:hover {
     background: url(assets/pic/微信图片_20210627222628.jpg);
     -webkit-filter: grayscale(0%);
@@ -214,6 +283,7 @@ body {
     -webkit-filter: grayscale(0%);
     padding-top: 5/2%;
 }
+
 .section4 {
     display: flex;
     position: relative;
@@ -221,6 +291,7 @@ body {
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
 .a4 {
     background: url(assets/pic/donut4.png);
     -webkit-filter: grayscale(100%) brightness(50%);
@@ -231,6 +302,7 @@ body {
     height: 20rem;
     padding-top: 5/2%;
 }
+
 .a4:hover {
     background: url(assets/pic/donut4.png);
     -webkit-filter: grayscale(0%);
@@ -240,6 +312,7 @@ body {
     background-repeat: no-repeat;
     padding-top: 5/2%;
 }
+
 .b4 {
     background: url(assets/pic/cof+don3.png);
     -webkit-filter: grayscale(100%)brightness(50%);
@@ -251,6 +324,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 .b4:hover {
     background: url(assets/pic/cof+don3.png);
     -webkit-filter: grayscale(0%);
@@ -260,6 +334,7 @@ body {
     background-repeat: no-repeat;
     padding-top: 5/2%;
 }
+
 .section5 {
     display: flex;
     position: relative;
@@ -267,6 +342,7 @@ body {
     margin-bottom: 1%;
     justify-content: space-between;
 }
+
 .a5 {
     background: url(assets/pic/cupcake1.png);
     -webkit-filter: grayscale(100%) brightness(70%);
@@ -277,6 +353,7 @@ body {
     background-repeat: no-repeat;
     padding-top: 5/2%;
 }
+
 .a5:hover {
     background: url(assets/pic/cupcake1.png);
     -webkit-filter: grayscale(0%);
@@ -287,6 +364,7 @@ body {
     background-repeat: no-repeat;
     padding-top: 5/2%;
 }
+
 .gif {
     position: fixed;
     left: 5ch;
