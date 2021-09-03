@@ -26,8 +26,9 @@ body {
     /*使其粘在顶部 但是会被下面的覆盖 怎么解决？*/
     top: 0;
     align-items: center;
-    margin-left: 3ch;
-    margin-right: 3ch;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wrapper {
