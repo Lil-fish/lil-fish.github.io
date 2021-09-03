@@ -78,9 +78,9 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
     justify-content: space-between;
+    padding-top: 5/2%;
 }
 .a1 {
-    display: block;
     background: url(assets/pic/图片2.png);
     -webkit-filter: brightness(50%)grayscale(100%);
     width: 39.5%;
@@ -91,7 +91,6 @@ body {
     height: 20rem;
 }
 .a1:hover {
-    <a href="https://lil-fish.github.io/personal/work1.html"></a>;
     background: url(assets/pic/图片2.png);
     -webkit-filter: grayscale(0%);
     width: 39.5%;
@@ -124,6 +123,7 @@ body {
     in-width: 20rem;
 }
 .texta {
+    color: white;
     -webkit-filter: grayscale(0%);
     position: absolute;
     top: 49%;
@@ -232,7 +232,7 @@ body {
     justify-content: space-between;
 }
 .a4 {
-    background: url(assets/pic/donut4.png);
+    background: url(assets/pic/3.16.jpg);
     -webkit-filter: grayscale(100%) brightness(50%);
     width: 49.5%;
     background-size: cover;
@@ -242,7 +242,7 @@ body {
     padding-top: 5/2%;
 }
 .a4:hover {
-    background: url(assets/pic/donut4.png);
+    background: url(assets/pic/3.16.jpg);
     -webkit-filter: grayscale(0%);
     width: 49.5%;
     background-size: cover;
@@ -251,7 +251,7 @@ body {
     padding-top: 5/2%;
 }
 .b4 {
-    background: url(assets/pic/cof+don3.png);
+    background: url(assets/pic/1.14.jpg);
     -webkit-filter: grayscale(100%)brightness(50%);
     width: 49.5%;
     padding-top: 5/2%;
@@ -262,7 +262,7 @@ body {
     background-repeat: no-repeat;
 }
 .b4:hover {
-    background: url(assets/pic/cof+don3.png);
+    background: url(assets/pic/1.14.jpg);
     -webkit-filter: grayscale(0%);
     width: 49.5%;
     background-size: cover;

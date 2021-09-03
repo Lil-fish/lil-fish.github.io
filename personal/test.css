@@ -1,8 +1,7 @@
-
-.a {background: url(assets/pic/图片1.png)}
-.a:hover{background: url(assets/pic/图片2.png)}
-.a{
-    aspect-ratio: 20/9;
-    object-fit:cover;
-    height: 500px;
+a {
+    display: block;
+    width: 170px;
+    height: 42px;
+    text-indent: -9999px;
+    background: url(/skin/__g/img/ui/nav/v2_v6.png) 0 0 no-repeat;
 }
