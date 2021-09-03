@@ -19,11 +19,6 @@ body {
     margin-right: 3ch;
 }
 
-.page-header p {
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 .wrapper {
     position: relative;
     display: flex;
@@ -75,7 +70,11 @@ body {
     opacity: 0.7;
 }
 
-.fa-behance {
+.fa-google {
+    color: white;
+}
+
+.fa-youtube {
     color: white;
 }
 
@@ -93,39 +92,22 @@ body {
 .top {
     display: flex;
     flex-direction: column;
-    margin-top: 12%;
+    margin-top: 2%;
     font-size: 36px;
     font-weight: 300;
+    margin-left: 6ch;
 }
 
 .main {
-    text-align: center;
-    font-size: 36px;
+    text-align: left;
+    font-size: 24px;
     font-weight: 300;
 }
 
-.sua {
-    display: flex;
-    justify-content: flex-start;
-}
-
 .sub {
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 3ch;
     margin-top: 10%;
     text-align: left;
     font-size: 20px;
-    font-weight: 50;
-}
-
-.suc {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5rem;
-    margin-left: auto;
-    margin-right: 3ch;
-    margin-top: 10%;
-    text-align: left;
-    font-size: 15px;
     font-weight: 50;
 }
 

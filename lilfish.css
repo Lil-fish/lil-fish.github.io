@@ -1,6 +1,6 @@
 @keyframes example {
     from {
-        font-size: 0px;
+        font-size: 50px;
         opacity: 0;
     }
     to {
@@ -80,6 +80,7 @@ body {
     justify-content: space-between;
 }
 .a1 {
+    display: block;
     background: url(assets/pic/图片2.png);
     -webkit-filter: brightness(50%)grayscale(100%);
     width: 39.5%;
@@ -90,6 +91,7 @@ body {
     height: 20rem;
 }
 .a1:hover {
+    <a href="https://lil-fish.github.io/personal/work1.html"></a>;
     background: url(assets/pic/图片2.png);
     -webkit-filter: grayscale(0%);
     width: 39.5%;
