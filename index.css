@@ -1,0 +1,179 @@
+@keyframes example {
+    from {
+        font-size: 50px;
+        opacity: 0;
+    }
+
+    to {
+        font-size: 30px;
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('assets/fonts/RobotoSlab-Regular.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('assets/fonts/RobotoSlab-Bold.ttf') format('ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.page-header {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    /*使其粘在顶部 但是会被下面的覆盖 怎么解决？*/
+    top: 0;
+    align-items: center;
+    /* max-width: 100%; */
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.site-title {
+    text-decoration: none;
+    color: black;
+    font-size: 36px;
+    font-weight: 700;
+    float: left;
+}
+
+.page-header nav a:first-child {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+.page-header nav a {
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    overflow: hidden;
+}
+
+
+.container {
+    /* display: flex; */
+    transition: margin-left 0.3s ease;
+    /* 平滑过渡 */
+}
+
+.sidebar {
+    width: 350px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    transition: transform 0.3s ease;
+    /* 平滑动画 */
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    line-height: 1.5;
+    /* 控制行高，默认是1.5左右 */
+}
+
+.sidebar ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 300;
+    /* Light */
+}
+
+.sidebar ul li.text-item {
+    margin-top: 15px;
+    color: gray;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* 右侧 */
+.content {
+    position: relative;
+    margin-left: 350px;
+    height: 100vh;
+  }
+
+.content-section {
+    display: none;
+}
+
+.content-section.active {
+    display: block;
+
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* 响应式设计：小于800px时隐藏侧栏 */
+@media (max-width: 800px) {
+    .sidebar {
+        transform: translateX(-100%);
+        /* 隐藏侧栏 */
+    }
+
+    .container {
+        margin-left: 0;
+        /* 内容区域占满全屏 */
+    }
+
+    .content {
+        margin-left: 0;
+        /* 去除内容区域的左边距 */
+    }
+}
+

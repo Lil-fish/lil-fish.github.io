@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/home.css" />
+    <title>随机浮动图片主页</title>
+</head>
+
+<body>
+
+    <br>
+    <div class="about">
+        <h2>Art Direction</h2>
+        <div class="tag">
+            <span>Speculative Design</span>
+            <span>Narrative Storytelling</span>
+        </div>
+        <div class="tag">
+            <span>Creative Coding</span>
+            <span>Audio-visual interaction</span>
+        </div>
+        <br>
+        <h2>Contact</h2>
+        <p>akalilfish@outlook.com</p>
+        <br>
+        <h2>Work Experience</h2>
+        <p>2024, Creative Intern, Output Studio, Shanghai</p>
+        <br>
+        <h2>Education</h2>
+        <p>2019-2024, BE, Product Design, Tongji University, Shanghai</p>
+        <p>2024-2025, MA, Computational Arts, Goldsmiths University of London</p>
+
+    </div>
+
+    <!-- 图片链接 -->
+    <a href="/project_html/asymmetry.html"><img src="/assets/img/Collage/2.png" class="floating-img" /></a>
+    <a href="/project_html/lostwords.html"><img src="/assets/img/Collage/002.png" class="floating-img" /></a>
+    <a href="/project_html/rest.html"><img src="/assets/img/Collage/1.png" class="floating-img" /></a>
+    <a href="/project_html/thermo.html"><img src="/assets/img/Collage/3.png" class="floating-img" /></a>
+    <a href="/project_html/other.html"><img src="/assets/img/Collage/4.png" class="floating-img" /></a>
+
+    <script>
+        const links = document.querySelectorAll('a');
+        const images = [];
+
+        // 初始化每张图的位置、速度、角度
+        links.forEach((link, index) => {
+            const img = link.querySelector('img');
+
+            img.onload = () => {
+                const imgWidth = img.offsetWidth;
+                const imgHeight = img.offsetHeight;
+
+                // 避免一开始生成在画面外
+                const x = Math.random() * (window.innerWidth - imgWidth);
+                const y = Math.random() * (window.innerHeight - imgHeight);
+                const angle = Math.random() * 360;
+                const speedX = (Math.random() - 0.5) * 0.5;
+                const speedY = (Math.random() - 0.5) * 0.5;
+                const rotationSpeed = (Math.random() - 0.5) * 0.1;
+
+                images.push({ img, x, y, angle, speedX, speedY, rotationSpeed });
+
+                // z-index 设置
+                img.style.zIndex = Math.floor(Math.random() * 10 + index);
+
+                // 悬停暂停
+                img.addEventListener('mouseenter', () => {
+                    img.classList.add('paused');
+                });
+                img.addEventListener('mouseleave', () => {
+                    img.classList.remove('paused');
+                });
+            };
+        });
+
+        function animate() {
+            images.forEach(obj => {
+
+                const { img } = obj;
+
+                if (!img.classList.contains('paused')) {
+                    // --- 加入斥力计算 ---
+                    images.forEach(other => {
+                        if (obj !== other) {
+                            const dx = obj.x - other.x;
+                            const dy = obj.y - other.y;
+                            const dist = Math.sqrt(dx * dx + dy * dy);
+                            const springLength = 120;
+                            const k = 0.0005;
+
+                            if (dist < springLength && dist > 0.01) {
+                                const force = k * (springLength - dist);
+                                obj.speedX += (dx / dist) * force;
+                                obj.speedY += (dy / dist) * force;
+                            }
+                        }
+                    });
+
+                    obj.x += obj.speedX;
+                    obj.y += obj.speedY;
+                    obj.angle += obj.rotationSpeed;
+
+                    const imgWidth = img.offsetWidth;
+                    const imgHeight = img.offsetHeight;
+
+                    // 边界碰撞
+                    if (obj.x < 5 || obj.x > window.innerWidth - imgWidth - 5) obj.speedX *= -1;
+                    if (obj.y < 5 || obj.y > window.innerHeight - imgHeight - 5) obj.speedY *= -1;
+
+                    img.style.transform = `translate(${obj.x}px, ${obj.y}px) rotate(${obj.angle}deg)`;
+                }
+            });
+
+            requestAnimationFrame(animate);
+        }
+
+        animate();
+
+        // 浏览器尺寸变化时重新限制边界
+        window.addEventListener('resize', () => {
+            images.forEach(obj => {
+                obj.x = Math.min(obj.x, window.innerWidth - obj.img.offsetWidth);
+                obj.y = Math.min(obj.y, window.innerHeight - obj.img.offsetHeight);
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>

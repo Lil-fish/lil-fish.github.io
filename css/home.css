@@ -1,0 +1,75 @@
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            src: url('assets/fonts/RobotoSlab-Regular.ttf') format('ttf');
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Roboto Slab';
+            src: url('assets/fonts/RobotoSlab-Bold.ttf') format('ttf');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: white;
+            font-family: 'Roboto Slab', serif;
+        }
+
+        a {
+            position: absolute;
+            display: block;
+        }
+
+        .about {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: black;
+            text-align: center;
+        }
+
+        .about p {
+            font-size: 24px;
+        }
+
+        .tag {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1em;
+            margin: 10px auto;
+            width: 60vw;
+        }
+
+        .tag span {
+            font-size: 24px;
+            padding: .5em;
+            outline: 2px solid black;
+        }
+
+        .floating-img {
+            width: 20vw;
+            /* 根据视口宽度自适应缩放 */
+            min-width: 120px;
+            max-width: 300px;
+            height: auto;
+            /* transition: transform 2s ease-in-out; */
+            /* cursor: pointer; */
+        }
+
+        .paused {
+            transition: none !important;
+        }
