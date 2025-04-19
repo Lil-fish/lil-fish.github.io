@@ -120,7 +120,7 @@ body {
     position: relative;
     margin-left: 350px;
     height: 100vh;
-  }
+}
 
 .content-section {
     display: none;
@@ -133,7 +133,7 @@ body {
 
 iframe {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     border: none;
     overflow: hidden;
     font-family: 'Roboto Slab', serif;
@@ -155,5 +155,6 @@ iframe {
         margin-left: 0;
         /* 去除内容区域的左边距 */
     }
-}
 
+
+}
