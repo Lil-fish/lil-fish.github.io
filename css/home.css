@@ -74,8 +74,13 @@ iframe {
         font-size: 15px;
     }
 
-    body {
+    html {
         overflow:scroll;
     }
+
+    .about{
+        scale: 85%;
+    }
+
 
 }
