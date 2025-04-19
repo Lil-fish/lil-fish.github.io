@@ -42,7 +42,7 @@
         }
 
         .about p {
-            font-size: 24px;
+            font-size: 18px;
         }
 
         .tag {
@@ -55,7 +55,7 @@
         }
 
         .tag span {
-            font-size: 24px;
+            font-size: 20px;
             padding: .5em;
             outline: 2px solid black;
         }
