@@ -74,4 +74,8 @@ iframe {
         font-size: 15px;
     }
 
+    body {
+        overflow:scroll;
+    }
+
 }
