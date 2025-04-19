@@ -2,7 +2,7 @@
 function changeContent(sectionId) {
     // 隐藏所有的内容区域
     var sections = document.querySelectorAll('.content-section');
-    sections.forEach(function(section) {
+    sections.forEach(function (section) {
         section.style.display = 'none';
     });
 
@@ -14,6 +14,7 @@ function changeContent(sectionId) {
 }
 
 // 默认加载主页内容
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     changeContent('home');
 });
+

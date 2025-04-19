@@ -146,7 +146,7 @@ p {
 }
 
 
-#back-to-home {
+#toggle-sidebar {
     position: fixed;
     bottom: 20px;
     right: 20px;
