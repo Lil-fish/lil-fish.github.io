@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Roboto Slab';
     src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -116,7 +116,7 @@ h1 {
 p {
     font-size: 18px;
     margin:auto;
-    font-weight: 300;
+    font-weight: 400;
     /* Light */
 }
 

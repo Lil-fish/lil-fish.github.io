@@ -2,7 +2,7 @@
         @font-face {
             font-family: 'Roboto Slab';
             src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
-            font-weight: 300;
+            font-weight: 400;
             font-style: normal;
         }
 
@@ -64,7 +64,7 @@
             width: 20vw;
             /* 根据视口宽度自适应缩放 */
             min-width: 120px;
-            max-width: 300px;
+            max-width: 400px;
             height: auto;
             /* transition: transform 2s ease-in-out; */
             /* cursor: pointer; */
