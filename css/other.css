@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'Roboto Slab';
     src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Roboto Slab';
     src: url('assets/fonts/RobotoSlab-Regular.ttf') format('ttf');
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
 
@@ -93,7 +93,7 @@ iframe {
 
 .tags span {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: 300;
     padding: .5em;
     outline: 2px solid black;
 }
@@ -116,7 +116,7 @@ h1 {
 p {
     font-size: 16px;
     margin:auto;
-    font-weight: 400;
+    font-weight: 300;
     /* Light */
 }
 

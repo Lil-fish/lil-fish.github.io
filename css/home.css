@@ -2,14 +2,14 @@
         @font-face {
             font-family: 'Roboto Slab';
             src: url('assets/fonts/RobotoSlab-Light.ttf') format('ttf');
-            font-weight: 400;
+            font-weight: 300;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Roboto Slab';
             src: url('assets/fonts/RobotoSlab-Regular.ttf') format('ttf');
-            font-weight: 400;
+            font-weight: 300;
             font-style: normal;
         }
 
@@ -55,7 +55,7 @@
         }
 
         .tag span {
-            font-size: 20px;
+            font-size: 18px;
             padding: .5em;
             outline: 2px solid black;
         }
@@ -64,7 +64,7 @@
             width: 20vw;
             /* 根据视口宽度自适应缩放 */
             min-width: 120px;
-            max-width: 400px;
+            max-width: 300px;
             height: auto;
             /* transition: transform 2s ease-in-out; */
             /* cursor: pointer; */
