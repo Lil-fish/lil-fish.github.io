@@ -35,7 +35,7 @@
 .site-title {
     text-decoration: none;
     color: black;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
     float: left;
 }
@@ -43,14 +43,14 @@
 .page-header nav a:first-child {
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 20px;
 }
 
 .page-header nav a {
     text-decoration: none;
     color: rgb(80, 80, 80);
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 20px;
 }
 
@@ -79,7 +79,7 @@ body {
 .sidebar {
     width: 350px;
     background-color: rgb(255, 255, 255);
-    padding: 20px;
+    padding: 16px;
     height: 100vh;
     position: fixed;
     transition: transform 0.3s ease;
@@ -98,7 +98,7 @@ body {
 .sidebar ul li a {
     color: black;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     /* Light */
 }
@@ -107,7 +107,7 @@ body {
     margin-top: 15px;
     color: gray;
     font-style: italic;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .sidebar ul li a:hover {
